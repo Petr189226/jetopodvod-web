@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Zásady ochrany osobních údajů · Je to podvod?</title>
+  <meta name="description" content="Jaké údaje aplikace Je to podvod? zpracovává, proč, komu je svěřuje a jak dlouho je drží. Text zpráv, které prověříte, neukládáme.">
+  <link rel="canonical" href="https://jetopodvod.spaicestudio.cz/soukromi/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#070b17" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="Je to podvod?">
+  <meta property="og:title" content="Zásady ochrany osobních údajů · Je to podvod?">
+  <meta property="og:url" content="https://jetopodvod.spaicestudio.cz/soukromi/">
+  <meta property="og:image" content="https://jetopodvod.spaicestudio.cz/assets/img/og.jpg">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/manrope-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="top" data-top>
+    <div class="wrap top__in">
+      <a class="brand" href="/" aria-label="Je to podvod?, úvod">
+        <img src="/assets/img/app-icon.webp" alt="" width="30" height="30">
+        <span>Je to podvod?</span>
+      </a>
+      <nav aria-label="Hlavní">
+        <a class="hide-sm" href="/#jak">Jak to funguje</a>
+        <a class="hide-sm" href="/#rodina">Rodina</a>
+        <a href="/soukromi/" aria-current="page">Soukromí</a>
+        <a href="/podpora/">Podpora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah" class="doc">
+    <div class="wrap doc__grid">
+      <nav class="toc" aria-label="Obsah stránky">
+        <p class="label">Obsah</p>
+        <ol>
+          <li><a href="#spravce">Kdo údaje zpracovává</a></li>
+          <li><a href="#kontrola">Prověření zprávy</a></li>
+          <li><a href="#ai">Umělá inteligence</a></li>
+          <li><a href="#filtr">Filtr SMS a&nbsp;hovory</a></li>
+          <li><a href="#ucet">Účet a&nbsp;záloha</a></li>
+          <li><a href="#hlaseni">Hlášení do komunity</a></li>
+          <li><a href="#rodina">Rodinný kruh a&nbsp;SOS</a></li>
+          <li><a href="#upozorneni">Upozornění</a></li>
+          <li><a href="#statistiky">Statistiky a&nbsp;chyby</a></li>
+          <li><a href="#dalsi">Další funkce</a></li>
+          <li><a href="#web">Tento web</a></li>
+          <li><a href="#prijemci">Komu údaje svěřujeme</a></li>
+          <li><a href="#lhuty">Jak dlouho údaje držíme</a></li>
+          <li><a href="#prava">Vaše práva</a></li>
+          <li><a href="#zaver">Zabezpečení a&nbsp;změny</a></li>
+        </ol>
+      </nav>
+
+      <article>
+        <h1>Zásady ochrany osobních údajů</h1>
+        <p class="meta">Platí pro aplikaci Je to podvod? a&nbsp;tento web. Poslední změna 23. října 2026.</p>
+        <p class="lead">Aby aplikace poznala podvod, musí si zprávu přečíst. Tady popisujeme, co se s&nbsp;ní a&nbsp;s dalšími údaji děje, komu je svěřujeme a&nbsp;jak dlouho je držíme. Píšeme podle toho, jak aplikace skutečně funguje.</p>
+
+        <section class="summary" aria-labelledby="kratce">
+          <h2 id="kratce">Krátce</h2>
+          <ul>
+            <li>Text zpráv, které prověříte, <strong>neukládáme</strong>, ani v&nbsp;telefonu, ani na serveru. Zůstane jen výsledek a&nbsp;otisk, ze kterého text zrekonstruovat nejde.</li>
+            <li>Nejasné zprávy pomáhá posoudit model umělé inteligence <strong>Claude od společnosti Anthropic</strong>. Dostane text zprávy a&nbsp;odkazy nebo čísla, která v&nbsp;ní jsou. Vaši identitu nedostane.</li>
+            <li>Aplikace funguje <strong>bez registrace</strong>. Účet je anonymní a&nbsp;e-mail zadáte, jen když si ho chcete zálohovat.</li>
+            <li>Statistiky používání posíláme <strong>jen se souhlasem</strong>, výchozí stav je vypnuto. Hlášení chyb neobsahuje obsah zpráv a&nbsp;můžete ho vypnout.</li>
+            <li>Data <strong>neprodáváme</strong>, nepoužíváme k&nbsp;reklamě a&nbsp;nesledujeme vás napříč aplikacemi ani weby.</li>
+            <li>Účet a&nbsp;data smažete v&nbsp;aplikaci: <span class="path">Profil → Soukromí → Smazat účet a&nbsp;data</span>.</li>
+          </ul>
+        </section>
+
+        <h2 id="spravce">Kdo údaje zpracovává</h2>
+        <p>Správcem osobních údajů je <strong>Petr Chajda</strong>, fyzická osoba podnikající, IČO 23250607, se sídlem Průběžná 1033/4, 100 00 Praha 10. S&nbsp;čímkoli k&nbsp;soukromí nám pište na <a href="mailto:jetopodvod@spaicestudio.cz">jetopodvod@spaicestudio.cz</a>. Pověřence pro ochranu osobních údajů jmenovaného nemáme.</p>
+
+        <h2 id="kontrola">Prověření zprávy, odkazu, čísla nebo účtu</h2>
+        <p>Zprávu do aplikace sami vložíte, nasdílíte z&nbsp;jiné aplikace nebo vyfotíte. Z&nbsp;fotky nebo snímku obrazovky přečte text přímo telefon. Obrázek nikam neposíláme ani neukládáme.</p>
+        <ul>
+          <li><strong>Nejdřív v&nbsp;telefonu.</strong> Zprávu hned posoudí pravidla přímo v&nbsp;aplikaci, bez připojení k&nbsp;internetu.</li>
+          <li><strong>Pak na našem serveru.</strong> Pro úplnou kontrolu pošleme text na náš server. Tam ho porovnáme s&nbsp;hlášeními komunity a&nbsp;prověříme odkazy: zjistíme stáří domény, rozbalíme zkrácené odkazy a&nbsp;u některých odkazů se zeptáme, jestli nejsou na seznamu škodlivých webů. Odkaz náš server navštíví bez spuštění skriptů, jen aby zjistil, kam doopravdy vede.</li>
+          <li><strong>Co uložíme:</strong> výsledek (verdikt, míru rizika, kódy důvodů a&nbsp;kategorii podvodu), druh vstupu, otisk šablony zprávy, ze kterého text zrekonstruovat nejde, a&nbsp;šifrované otisky odkazů, čísel a&nbsp;účtů ze zprávy. Záznam je spojený s&nbsp;vaším anonymním účtem.</li>
+          <li><strong>Co neuložíme:</strong> text zprávy, citace z&nbsp;ní ani fotky.</li>
+          <li><strong>V&nbsp;telefonu</strong> zůstane historie kontrol bez textu zpráv: verdikt, míra rizika, kategorie, hlavní důvod a&nbsp;doména. Smažete ji v <span class="path">Soukromí → Smazat historii kontrol</span>.</li>
+        </ul>
+        <p>Otisky podezřelých a&nbsp;podvodných kontrol (nikdy text) nám pomáhají odhalit vlny podvodů, které pak ukazujeme v&nbsp;Radaru. Kontrolu provádíme, protože o&nbsp;ni žádáte (čl. 6 odst.&nbsp;1 písm.&nbsp;b) GDPR). Otisky pro odhalování vln a&nbsp;ochranu služby před zneužitím zpracováváme z&nbsp;oprávněného zájmu na prevenci podvodů (čl. 6 odst.&nbsp;1 písm.&nbsp;f) a&nbsp;recitál 47 GDPR).</p>
+
+        <h2 id="ai">Umělá inteligence</h2>
+        <p>Některé zprávy pošle náš server k&nbsp;posouzení modelu <strong>Claude</strong> společnosti <strong>Anthropic, PBC</strong> (USA). Stane se to, když si pravidla nejsou jistá, když prověřujete konverzaci z&nbsp;bazaru, když zpráva vyjde bez známek podvodu, ale týká se peněz, karty, banky nebo podobně citlivé věci, a&nbsp;vždy, když sami klepnete na „Mám přesto pochybnost“. Spolu s&nbsp;textem posíláme odkazy a&nbsp;čísla, která jsme ve zprávě našli, druh vstupu, kanál (například SMS) a&nbsp;u bazaru vaši roli. Vaše jméno, e-mail, identifikátor účtu ani jiný údaj o&nbsp;vás neposíláme.</p>
+        <ul>
+          <li>Verdikt nesestavuje umělá inteligence. Její postřehy kód ověří a&nbsp;teprve potom je spojí s&nbsp;výsledkem pravidel a&nbsp;komunity.</li>
+          <li>Anthropic podle svých obchodních podmínek data z&nbsp;našich dotazů nepoužívá k&nbsp;trénování modelů a&nbsp;automaticky je maže do 30&nbsp;dnů. Déle je drží jen tehdy, když porušují jeho pravidla užití, nebo kvůli zákonu.</li>
+          <li>Abychom stejnou zprávu nemuseli posílat znovu, držíme výsledek posouzení 6&nbsp;hodin pod otiskem zprávy, opět bez textu.</li>
+        </ul>
+        <p>Rychlá kontrola přes Siri a&nbsp;Zkratky probíhá celá v&nbsp;telefonu a&nbsp;k umělé inteligenci nic neposílá.</p>
+
+        <h2 id="filtr">Filtr SMS a&nbsp;hovory</h2>
+        <h3>Filtr SMS v&nbsp;iPhonu</h3>
+        <p>Funguje, jen když ho sami zapnete v&nbsp;Nastavení iPhonu. iOS aplikaci předává jen SMS od čísel mimo vaše kontakty, nikdy iMessage ani zprávy od známých. Zprávu posoudí pravidla přímo v&nbsp;telefonu. Jen když si filtr není jistý a&nbsp;ve zprávě je odkaz, pošle iPhone text a&nbsp;odesílatele přes adresu našeho webu na náš server k&nbsp;prověření odkazu. Server vrátí výsledek hned, k&nbsp;umělé inteligenci nic neposílá a <strong>nic neukládá</strong>. Do záznamu provozu zapíše jen výsledek (přesunout do Nevyžádaných, nebo nechat), nikdy text ani odesílatele.</p>
+        <h3>Identifikace hovorů a&nbsp;Kdo mi volal?</h3>
+        <p>Pokud ochranu hovorů zapnete, telefon si jednou denně stáhne seznam čísel, která instituce veřejně označily za podvodná a&nbsp;my jsme zdroj ověřili. Volající porovná se seznamem jen telefon, čísla volajících nikam neposíláme. Stejně tak „Kdo mi volal?“ rozebere zadané číslo jen v&nbsp;telefonu.</p>
+        <p>Tyto funkce zpracováváme, protože jste si je zapnuli (čl. 6 odst.&nbsp;1 písm.&nbsp;b) GDPR). Vypnete je kdykoli v&nbsp;nastavení telefonu.</p>
+
+        <h2 id="ucet">Účet a&nbsp;záloha</h2>
+        <p>Aplikace funguje bez registrace. Když poprvé potřebuje server, založí na pozadí <strong>anonymní účet</strong> s&nbsp;náhodným identifikátorem, bez e-mailu a&nbsp;telefonního čísla. Díky němu chráníme službu před zneužitím a&nbsp;ukládáme vaše hlášení a&nbsp;členství v&nbsp;rodinném kruhu. Přihlášení je v&nbsp;telefonu uložené šifrovaně, klíč drží systémová klíčenka.</p>
+        <p><strong>Záloha účtu je dobrovolná.</strong> Když ji v <span class="path">Profil → Záloha účtu</span> zapnete, zadáte e-mail a&nbsp;my vám na něj pošleme jednorázový kód. Heslo nepotřebujete. E-mail použijeme jen k&nbsp;zaslání kódů pro zálohu a&nbsp;obnovení účtu na jiném telefonu. Když obnovení žádá někdo, kdo zálohu nemá, odpovíme stejně jako ostatním, takže nikdo nezjistí, kdo aplikaci používá.</p>
+        <p>Účet vedeme, protože službu používáte (čl. 6 odst.&nbsp;1 písm.&nbsp;b) GDPR), ochranu proti zneužití z&nbsp;oprávněného zájmu (písm.&nbsp;f).</p>
+
+        <h2 id="hlaseni">Hlášení do komunity</h2>
+        <p>Hlášením varujete ostatní. Uložíme:</p>
+        <ul>
+          <li>druh podvodu, kanál a&nbsp;případně platformu, například bazar,</li>
+          <li>odkazy, čísla, účty, e-maily nebo profily, které označíte jako podvodné,</li>
+          <li>nepovinný popis a&nbsp;nepovinný důkaz, tedy text zprávy, ve kterém telefon i&nbsp;server začerní vaše údaje, jako jsou jména, čísla a&nbsp;adresy,</li>
+          <li>jestli jste přišli o&nbsp;peníze a&nbsp;v jakém rozmezí,</li>
+          <li>čas, kdy jste souhlasili se zveřejněním souhrnných údajů,</li>
+          <li>šifrovaný otisk náhodného identifikátoru instalace, kvůli ochraně proti hromadnému zneužití.</li>
+        </ul>
+        <p>Kdo hlásil, ostatním nikdy neukazujeme. Telefonní čísla a&nbsp;čísla účtů ukládáme jen jako šifrované otisky a&nbsp;veřejně je teď nezobrazujeme vůbec. Čitelně ukládáme jen domény a&nbsp;odkazy podvodných webů. Důkazy jsou v&nbsp;neveřejném úložišti a&nbsp;čte je jen moderátorský tým.</p>
+        <p>Hlášení prochází automatickou kontrolou a&nbsp;lidskou moderací. Automaticky se započítá jen hlášení, které odpovídá známé vlně podvodů. Výsledek moderace i&nbsp;odůvodnění uvidíte v&nbsp;Profilu. Pro ochranu proti zneužití si u&nbsp;účtu vedeme počet schválených a&nbsp;zamítnutých hlášení. Klepnutím na „Taky mi to přišlo“ uložíme potvrzení k&nbsp;vlně nebo indikátoru.</p>
+        <p>Zveřejnění souhrnných údajů je na vašem souhlasu, který udělujete při odeslání (čl. 6 odst.&nbsp;1 písm.&nbsp;a) GDPR). Indikátory podvodů zpracováváme z&nbsp;oprávněného zájmu na ochraně lidí před podvody (písm.&nbsp;f).</p>
+
+        <h2 id="rodina">Rodinný kruh a&nbsp;SOS</h2>
+        <p>Do kruhu se vstupuje jen pozvánkou s&nbsp;kódem, který platí 7&nbsp;dní a&nbsp;jen pro jednoho člověka. Uložíme:</p>
+        <ul>
+          <li>jméno, které si v&nbsp;kruhu zvolíte, a&nbsp;vaši roli (strážce, nebo chráněný),</li>
+          <li>nepovinné telefonní číslo pro tlačítko „Zavolat“, které vidí jen členové vašeho kruhu,</li>
+          <li>co chráněný sdílí se strážci a&nbsp;události, které sám povolí: že prověřil zprávu a&nbsp;vyšla jako podvod (bez obsahu zprávy), že stiskl „Volá mi někdo divný“, že spustil SOS a&nbsp;stav ochrany,</li>
+          <li>rodinné dohody, například že máte domluvené rodinné heslo. Samotné heslo nikam neukládáme,</li>
+          <li>žádosti strážce, například o&nbsp;zapnutí senior režimu. Provedou se jen se souhlasem chráněného.</li>
+        </ul>
+        <p>Polohu, zprávy, hovory ani historii prohlížení kruh nesdílí nikdy. Když se v&nbsp;aplikaci „zeptáte blízkého“, pošlete mu zprávu sami přes systémové sdílení, například Zprávy nebo WhatsApp. Náš server text nevidí a&nbsp;strážcům může jít jen upozornění, že se jich ptáte, bez obsahu.</p>
+        <p><strong>SOS</strong> průvodce, odškrtnuté kroky i&nbsp;shrnutí pro policii zůstávají jen v&nbsp;telefonu. Rodině dáme vědět, jen když sdílení SOS povolíte.</p>
+        <p>Rodinný kruh stojí na vašem souhlasu (čl. 6 odst.&nbsp;1 písm.&nbsp;a) GDPR). Odvoláte ho v&nbsp;nastavení kruhu nebo odchodem z&nbsp;kruhu.</p>
+
+        <h2 id="upozorneni">Upozornění</h2>
+        <p>Když upozornění povolíte, uložíme token zařízení pro jejich doručení, platformu, témata, která vás zajímají, a&nbsp;čas posledního upozornění o&nbsp;vlně, abychom vás o&nbsp;vlnách neupozorňovali víc než jednou denně. Upozornění nikdy neobsahují text vašich zpráv. Doručuje je služba Expo přes Apple. Stojí to na vašem souhlasu, který odvoláte v&nbsp;nastavení telefonu nebo aplikace.</p>
+
+        <h2 id="statistiky">Statistiky a&nbsp;hlášení chyb</h2>
+        <h3>Anonymní statistiky, jen se souhlasem</h3>
+        <p>Výchozí stav je vypnuto. Zapnout a&nbsp;vypnout je můžete při prvním spuštění nebo v <span class="path">Soukromí</span>. Posíláme jen názvy akcí a&nbsp;výčtové hodnoty, například „kontrola dokončena, verdikt podezřelé, riziko 40–74“, k&nbsp;tomu náhodný identifikátor statistik, verzi aplikace, systém telefonu a&nbsp;jestli máte zapnutý senior režim. Nikdy text zpráv, odkazy, čísla ani jména. Statistiky nevytvářejí profily osob a&nbsp;neurčují polohu podle IP adresy. Když souhlas odvoláte, identifikátor statistik zahodíme. Zpracovává je PostHog v&nbsp;EU, na základě vašeho souhlasu (čl. 6 odst.&nbsp;1 písm.&nbsp;a) GDPR).</p>
+        <h3>Hlášení chyb</h3>
+        <p>Když aplikace spadne nebo narazí na chybu, pošle technický popis: druh chyby, místo v&nbsp;kódu, verzi aplikace, model a&nbsp;systém telefonu. Text chyb posíláme jen ve známém technickém tvaru, jinak ho nahradíme značkou. Bez obsahu zpráv, bez údajů o&nbsp;vás a&nbsp;bez snímků obrazovky. Zpracovává je Sentry z&nbsp;oprávněného zájmu na funkční a&nbsp;bezpečné aplikaci (čl. 6 odst.&nbsp;1 písm.&nbsp;f) GDPR). Vypnete je v <span class="path">Soukromí → Hlášení chyb</span>.</p>
+
+        <h2 id="dalsi">Další funkce</h2>
+        <ul>
+          <li><strong>Prověřit e-shop:</strong> adresu webu nebo IČO, které zadáte, prověří náš server. Navštíví úvodní stránku obchodu, zjistí stáří domény a&nbsp;údaje o&nbsp;firmě z&nbsp;veřejného registru ARES. Nic z&nbsp;toho neukládáme.</li>
+          <li><strong>Hledat v&nbsp;hlášeních:</strong> hledanou hodnotu porovnáme s&nbsp;hlášeními a&nbsp;neukládáme ji.</li>
+          <li><strong>Než zaplatíte, Bazar štít, Akademie a&nbsp;hra</strong> běží v&nbsp;telefonu.</li>
+          <li><strong>Námitka „Je to vaše číslo?“ a&nbsp;oznámení nezákonného obsahu:</strong> uložíme kontakt, který uvedete, a&nbsp;vaše vysvětlení. Použijeme je jen k&nbsp;vyřízení. Po smazání účtu zůstanou bez vazby na účet, dokud je potřebujeme k&nbsp;vyřízení a&nbsp;k doložení rozhodnutí. Zpracováváme je z&nbsp;oprávněného zájmu a&nbsp;kvůli povinnostem podle nařízení o&nbsp;digitálních službách (čl. 6 odst.&nbsp;1 písm.&nbsp;c) a&nbsp;f) GDPR).</li>
+        </ul>
+
+        <h2 id="web">Tento web</h2>
+        <p>Web nepoužívá cookies ani analytiku. Běží na platformě Railway v&nbsp;EU, která kvůli doručení a&nbsp;ochraně stránek zpracovává technické údaje o&nbsp;připojení, například IP adresu a&nbsp;typ prohlížeče.</p>
+
+        <h2 id="prijemci">Komu údaje svěřujeme</h2>
+        <p>Údaje svěřujeme jen zpracovatelům, kteří je potřebují k&nbsp;provozu aplikace, a&nbsp;jen v&nbsp;nutném rozsahu.</p>
+        <div class="table" tabindex="0" role="region" aria-label="Zpracovatelé a další příjemci">
+          <table>
+            <thead><tr><th scope="col">Příjemce</th><th scope="col">Proč</th><th scope="col">Co dostane</th><th scope="col">Kde</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Supabase, Inc.</th><td>databáze, účty, serverové funkce a&nbsp;úložiště důkazů</td><td>všechno, co je u&nbsp;vašeho účtu na serveru</td><td>EU</td></tr>
+              <tr><th scope="row">Anthropic, PBC</th><td>posouzení nejasných zpráv umělou inteligencí</td><td>text zprávy a&nbsp;odkazy a&nbsp;čísla z&nbsp;ní, bez vaší identity</td><td>USA</td></tr>
+              <tr><th scope="row">650 Industries, Inc. (Expo)</th><td>doručení upozornění</td><td>token zařízení a&nbsp;text upozornění</td><td>USA</td></tr>
+              <tr><th scope="row">Apple</th><td>doručení upozornění do iPhonu</td><td>token zařízení a&nbsp;text upozornění</td><td>podle podmínek Apple</td></tr>
+              <tr><th scope="row">PostHog, Inc.</th><td>statistiky používání, jen se souhlasem</td><td>názvy akcí a&nbsp;výčtové hodnoty, náhodný identifikátor statistik</td><td>EU</td></tr>
+              <tr><th scope="row">Functional Software, Inc. (Sentry)</th><td>hlášení chyb</td><td>technický popis chyby a&nbsp;zařízení</td><td>EU</td></tr>
+              <tr><th scope="row">Railway Corporation</th><td>provoz webu a&nbsp;předání dotazu filtru SMS</td><td>technické údaje o&nbsp;připojení, u&nbsp;filtru SMS text a&nbsp;odesílatele zprávy, bez uložení</td><td>EU</td></tr>
+              <tr><th scope="row">Google (Web Risk)</th><td>ověření, zda odkaz není na seznamu škodlivých webů</td><td>jen samotný odkaz</td><td>podle podmínek Google</td></tr>
+              <tr><th scope="row">Poskytovatel e-mailu</th><td>zaslání kódu pro zálohu účtu</td><td>e-mail a&nbsp;kód</td><td>EU</td></tr>
+              <tr><th scope="row">rdap.org</th><td>stáří domény</td><td>jen název domény</td><td>veřejná služba</td></tr>
+              <tr><th scope="row">ARES, Ministerstvo financí</th><td>údaje o&nbsp;firmě u&nbsp;kontroly e-shopu</td><td>jen IČO</td><td>ČR</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Když prověřujete odkaz nebo e-shop, náš server tu adresu navštíví. Provozovatel webu vidí náš server, ne vás. Mimo EU mohou údaje putovat jen u&nbsp;příjemců, u&nbsp;kterých v&nbsp;tabulce nestojí EU nebo ČR. Předání do USA opíráme o&nbsp;standardní smluvní doložky Evropské komise, případně o&nbsp;rámec EU–USA pro ochranu osobních údajů, pokud ho příjemce dodržuje. Orgánům veřejné moci údaje poskytneme jen na základě zákonné žádosti a&nbsp;každou takovou žádost evidujeme.</p>
+
+        <h2 id="lhuty">Jak dlouho údaje držíme</h2>
+        <div class="table" tabindex="0" role="region" aria-label="Doby uložení">
+          <table>
+            <thead><tr><th scope="col">Údaj</th><th scope="col">Jak dlouho</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Text zpráv ke kontrole</th><td>neukládáme</td></tr>
+              <tr><th scope="row">Výsledek kontroly na serveru</th><td>24&nbsp;měsíců. Po smazání účtu zůstane do konce lhůty bez vazby na vás.</td></tr>
+              <tr><th scope="row">Výsledek posouzení umělou inteligencí</th><td>6&nbsp;hodin, bez textu. U&nbsp;společnosti Anthropic nejdéle 30&nbsp;dnů, s&nbsp;výjimkami popsanými výše.</td></tr>
+              <tr><th scope="row">Historie kontrol v&nbsp;telefonu</th><td>dokud ji nesmažete</td></tr>
+              <tr><th scope="row">Důkaz u&nbsp;hlášení</th><td>12&nbsp;měsíců</td></tr>
+              <tr><th scope="row">Popis hlášení a&nbsp;platforma</th><td>12&nbsp;měsíců. Pak zůstane jen souhrnný záznam: druh, kanál a&nbsp;stav.</td></tr>
+              <tr><th scope="row">Odkazy, čísla a&nbsp;účty z&nbsp;hlášení</th><td>12&nbsp;měsíců od posledního hlášení. Při otevřené námitce do jejího vyřízení.</td></tr>
+              <tr><th scope="row">Podklady pro vlny podvodů</th><td>12&nbsp;měsíců. Vlna pak zůstává jen se souhrnnými počty.</td></tr>
+              <tr><th scope="row">Rodinné události</th><td>90&nbsp;dní</td></tr>
+              <tr><th scope="row">Členství v&nbsp;rodinném kruhu</th><td>do odchodu z&nbsp;kruhu nebo smazání účtu</td></tr>
+              <tr><th scope="row">Token pro upozornění</th><td>do vypnutí upozornění, odinstalování aplikace nebo smazání účtu</td></tr>
+              <tr><th scope="row">Záznam o&nbsp;odeslaném upozornění</th><td>30&nbsp;dní</td></tr>
+              <tr><th scope="row">Statistiky používání</th><td>12&nbsp;měsíců</td></tr>
+              <tr><th scope="row">Hlášení chyb</th><td>nejdéle 90&nbsp;dní</td></tr>
+              <tr><th scope="row">Počítadla proti zneužití a&nbsp;stáří domén</th><td>1 den</td></tr>
+              <tr><th scope="row">Účet a&nbsp;e-mail zálohy</th><td>do smazání účtu</td></tr>
+              <tr><th scope="row">Námitky a&nbsp;oznámení obsahu</th><td>po dobu vyřízení a&nbsp;doložení rozhodnutí</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="prava">Vaše práva</h2>
+        <ul>
+          <li><strong>Přístup a&nbsp;přenositelnost:</strong> <span class="path">Soukromí → Stáhnout moje data</span> vám dá všechno, co je u&nbsp;vašeho účtu na serveru, jako text ve formátu JSON.</li>
+          <li><strong>Výmaz:</strong> <span class="path">Soukromí → Smazat účet a&nbsp;data</span>. Co přesně smažeme, popisuje stránka <a href="/smazani-uctu/">Smazání účtu</a>.</li>
+          <li><strong>Odvolání souhlasu:</strong> statistiky, upozornění a&nbsp;sdílení v&nbsp;rodině vypnete kdykoli v&nbsp;aplikaci.</li>
+          <li><strong>Oprava, omezení zpracování a&nbsp;námitka</strong> proti zpracování z&nbsp;oprávněného zájmu: napište nám na <a href="mailto:jetopodvod@spaicestudio.cz">jetopodvod@spaicestudio.cz</a>.</li>
+        </ul>
+        <p>Na žádosti odpovíme nejpozději do jednoho měsíce. Když se vám nebude zdát, jak s&nbsp;údaji zacházíme, můžete podat stížnost u&nbsp;Úřadu pro ochranu osobních údajů, Pplk. Sochora 727/27, 170 00 Praha 7, <a href="https://uoou.gov.cz">uoou.gov.cz</a>.</p>
+        <p>Verdikt kontroly je automatické posouzení rizika. Nemá právní účinky a&nbsp;rozhodnutí, co se zprávou uděláte, je vždy na vás.</p>
+
+        <h2 id="zaver">Zabezpečení, věk a&nbsp;změny</h2>
+        <p>Spojení s&nbsp;naším serverem je šifrované. Přihlášení je v&nbsp;telefonu uložené šifrovaně. Čísla a&nbsp;účty ukládáme jen jako otisky s&nbsp;tajným klíčem, takže je z&nbsp;databáze nejde přečíst. K&nbsp;datům má tým přístup jen přes dvoufázové ověření a&nbsp;každý zásah se zaznamenává. Údaje pravidelně mažeme podle lhůt výše.</p>
+        <p>Aplikace je určena lidem od 15&nbsp;let.</p>
+        <p>Když tyto zásady podstatně změníme, dáme vám vědět v&nbsp;aplikaci. Datum poslední změny je nahoře.</p>
+
+        <div class="contact">
+          <div><strong>Máte otázku k&nbsp;soukromí?</strong><span>Napište nám, odpovíme co nejdřív.</span></div>
+          <a class="btn btn--ink" href="mailto:jetopodvod@spaicestudio.cz">jetopodvod@spaicestudio.cz</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <div>
+        <a class="brand" href="/"><img src="/assets/img/app-icon.webp" alt="" width="30" height="30" loading="lazy"><span>Je to podvod?</span></a>
+        <address>Provozuje Petr Chajda, IČO 23250607<br>Průběžná 1033/4, 100 00 Praha 10<br><a class="mail" href="mailto:jetopodvod@spaicestudio.cz">jetopodvod@spaicestudio.cz</a></address>
+      </div>
+      <nav aria-label="Patička">
+        <ul>
+          <li><a href="/podpora/">Podpora</a></li>
+          <li><a href="/soukromi/" aria-current="page">Soukromí</a></li>
+          <li><a href="/podminky/">Podmínky</a></li>
+          <li><a href="/smazani-uctu/">Smazání účtu</a></li>
+        </ul>
+      </nav>
+      <p class="made"><span>© 2026 Petr Chajda</span><span>Navrhlo a&nbsp;vyvinulo <a href="https://spaicestudio.cz">spaice studio</a></span></p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

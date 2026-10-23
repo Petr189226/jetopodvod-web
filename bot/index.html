@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>JeToPodvodBot · Je to podvod?</title>
+  <meta name="description" content="Co dělá JeToPodvodBot, server aplikace Je to podvod?, když prověřuje odkaz nebo e-shop.">
+  <link rel="canonical" href="https://jetopodvod.spaicestudio.cz/bot/">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#070b17" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="top" data-top>
+    <div class="wrap top__in">
+      <a class="brand" href="/" aria-label="Je to podvod?, úvod">
+        <img src="/assets/img/app-icon.webp" alt="" width="30" height="30">
+        <span>Je to podvod?</span>
+      </a>
+      <nav aria-label="Hlavní">
+        <a class="hide-sm" href="/#jak">Jak to funguje</a>
+        <a class="hide-sm" href="/#rodina">Rodina</a>
+        <a href="/soukromi/">Soukromí</a>
+        <a href="/podpora/">Podpora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah" class="doc">
+    <div class="wrap doc__grid doc__grid--single">
+      <article>
+        <h1>JeToPodvodBot</h1>
+        <p class="lead">Našli jste v&nbsp;záznamech svého webu návštěvu s&nbsp;označením <code>JeToPodvodBot</code>? To je náš server. Ověřuje odkaz nebo e-shop, který někdo právě prověřuje v&nbsp;aplikaci Je to podvod?</p>
+
+        <h2 id="co-dela">Co dělá</h2>
+        <ul>
+          <li>U&nbsp;odkazu zjistí jen, kam doopravdy vede. Pošle dotaz HEAD a&nbsp;projde nejvýš 5 přesměrování.</li>
+          <li>U&nbsp;e-shopu jednou stáhne úvodní stránku, jen HTML a&nbsp;nejvýš 512&nbsp;kB, aby našel IČO, obchodní podmínky a&nbsp;kontakt.</li>
+          <li>Nespouští JavaScript, neukládá cookies, nepřihlašuje se a&nbsp;nic nevyplňuje.</li>
+          <li>Nikdy se nepřipojí na neveřejné adresy, například do místních sítí.</li>
+          <li>Přijde jen tehdy, když odkaz nebo e-shop prověřuje člověk v&nbsp;aplikaci. Weby plošně neprochází.</li>
+        </ul>
+
+        <h2 id="web">Je to váš web?</h2>
+        <p>Když se váš web v&nbsp;aplikaci objeví nesprávně, například jako nahlášený komunitou, ozvěte se. V&nbsp;aplikaci u&nbsp;výsledku vyhledání klepněte na „Je to vaše číslo? Ozvěte se“, nebo nám napište. Do vyřízení ho označíme jako sporný a&nbsp;ozveme se do 7&nbsp;dní.</p>
+
+        <div class="contact">
+          <div><strong>Dotaz k&nbsp;návštěvám bota?</strong><span>Napište nám, odpovíme co nejdřív.</span></div>
+          <a class="btn btn--ink" href="mailto:jetopodvod@spaicestudio.cz">jetopodvod@spaicestudio.cz</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <div>
+        <a class="brand" href="/"><img src="/assets/img/app-icon.webp" alt="" width="30" height="30" loading="lazy"><span>Je to podvod?</span></a>
+        <address>Provozuje Petr Chajda, IČO 23250607<br>Průběžná 1033/4, 100 00 Praha 10<br><a class="mail" href="mailto:jetopodvod@spaicestudio.cz">jetopodvod@spaicestudio.cz</a></address>
+      </div>
+      <nav aria-label="Patička">
+        <ul>
+          <li><a href="/podpora/">Podpora</a></li>
+          <li><a href="/soukromi/">Soukromí</a></li>
+          <li><a href="/podminky/">Podmínky</a></li>
+          <li><a href="/smazani-uctu/">Smazání účtu</a></li>
+        </ul>
+      </nav>
+      <p class="made"><span>© 2026 Petr Chajda</span><span>Navrhlo a&nbsp;vyvinulo <a href="https://spaicestudio.cz">spaice studio</a></span></p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>

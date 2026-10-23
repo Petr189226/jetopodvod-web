@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["7X4AX8ACWV.cz.jetopodvod.app"],
+        "components": [
+          { "/": "/vlna/*" },
+          { "/": "/hledat", "?": { "q": "?*" } },
+          { "/": "/rodina/pozvanka/*" },
+          { "/": "/lekce/*" },
+          { "/": "/sos" }
+        ]
+      }
+    ]
+  },
+  "messagefilter": {
+    "apps": ["7X4AX8ACWV.cz.jetopodvod.app"]
+  }
+}

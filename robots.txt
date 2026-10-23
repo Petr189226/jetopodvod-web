@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /odkaz/
+Disallow: /pozvanka/
+Disallow: /rodina/
+Disallow: /vlna/
+Disallow: /lekce/
+Disallow: /hledat
+Disallow: /sos
+
+Sitemap: https://jetopodvod.spaicestudio.cz/sitemap.xml
