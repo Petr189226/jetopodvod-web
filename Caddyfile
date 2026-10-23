@@ -23,6 +23,23 @@
 	@private path /Dockerfile /Caddyfile /railway.json /CNAME /.nojekyll /.gitignore /.dockerignore /README.md
 	error @private 404
 
+	# Síťový dotaz iOS filtru SMS (ILMessageFilterExtensionNetworkURL, sekce messagefilter v AASA).
+	# Jde na Edge Function `sms-filter` na Railway; funkce přijme jen požadavek s tajemstvím proxy.
+	# Tělo (text SMS, odesílatel) se nikde neloguje – Caddy tu nemá access log.
+	handle /api/sms-filter {
+		request_body {
+			max_size 16KB
+		}
+		rewrite * /functions/v1/sms-filter
+		reverse_proxy {$SMS_FILTER_UPSTREAM} {
+			header_up Host {upstream_hostport}
+			header_up x-proxy-secret {$SMS_FILTER_PROXY_SECRET}
+			header_up -Cookie
+			header_up -Authorization
+			header_down Cache-Control "no-store"
+		}
+	}
+
 	# Universal links a filtr SMS: iOS čte soubor bez přípony jen jako JSON
 	@aasa path /.well-known/apple-app-site-association
 	header @aasa Content-Type "application/json"
