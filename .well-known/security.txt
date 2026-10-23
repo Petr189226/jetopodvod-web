@@ -1,0 +1,5 @@
+Contact: mailto:jetopodvod@spaicestudio.cz
+Expires: 2027-10-23T00:00:00.000Z
+Preferred-Languages: cs, en
+Canonical: https://jetopodvod.spaicestudio.cz/.well-known/security.txt
+Policy: https://jetopodvod.spaicestudio.cz/podpora/
