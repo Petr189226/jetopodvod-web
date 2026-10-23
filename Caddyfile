@@ -19,6 +19,10 @@
 		-Server
 	}
 
+	# Konfigurace a dokumentace z repa nejsou veřejné. Railway smazání v Dockerfile neprovede, proto 404 tady.
+	@private path /Dockerfile /Caddyfile /railway.json /CNAME /.nojekyll /.gitignore /.dockerignore /README.md
+	error @private 404
+
 	# Universal links a filtr SMS: iOS čte soubor bez přípony jen jako JSON
 	@aasa path /.well-known/apple-app-site-association
 	header @aasa Content-Type "application/json"
